@@ -1,0 +1,21 @@
+{
+    "name": "flycartinc/cache",
+    "type": "library",
+    "description": "A Multi-platform Cache management wrapper library.",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Flycartinc\\Cache\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yogeshwaran Manoharan"
+        }
+    ]
+}
