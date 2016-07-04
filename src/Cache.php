@@ -10,11 +10,11 @@ class Cache
         self::$platform = $platform;
     }
 
-    public static function setItem($ItemName, $value, $expiration)
+    public static function setItem($ItemName, $value, $expiration = 60 * 60 * 24)
     {
         if (self::$platform === 'wordpress' )
         {
-            return WpCache::setItem($ItemName, $value, $expiration);
+            return WpCache::setItem($ItemName, $value, $expiration = 60 * 60 * 24);
         }
     }
 
