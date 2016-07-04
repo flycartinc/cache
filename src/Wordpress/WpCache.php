@@ -4,9 +4,9 @@ namespace Flycartinc\Cache\Wordpress;
 class WpCache
 {
 
-    public static function setItem($transient, $value, $expiration)
+    public static function setItem($transient, $value, $expiration = 60 * 60 * 24)
     {
-        return set_transient($transient, $value, $expiration);
+        return set_transient($transient, $value, $expiration = 60 * 60 * 24);
     }
 
     public static function getItem($transient)
